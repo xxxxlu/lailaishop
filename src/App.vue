@@ -46,41 +46,22 @@
       <div class="container">
         <div class="footer-columns">
           <div class="footer-column">
-            <h3>BRANDS</h3>
-            <ul>
-              <li><a href="#">Apple</a></li>
-              <li><a href="#">Samsung</a></li>
-              <li><a href="#">Nokia</a></li>
-              <li><a href="#">Casio</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
             <h3>CUSTOMER SERVICE</h3>
             <ul>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">FAQ</a></li>
               <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>QUESTIONS</h3>
-            <ul>
-              <li><a href="#">Track Your Order</a></li>
-              <li><a href="#">Exchange Policy</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Warranty Policy</a></li>
             </ul>
           </div>
           <div class="footer-column">
             <h3>PAYMENT METHOD</h3>
             <div class="payment-icons">
-              <img src="https://ext.same-assets.com/3844190759/2054980515.jpeg" alt="Payment Methods" />
+              <img src="./assets/easypaisa.png" alt="Payment easypaisa" />
+              <img src="./assets/Frame.png" alt="Payment Frame" />
             </div>
           </div>
         </div>
         <div class="copyright">
-          <p>© 2025 Symbios.pk. All Rights Reserved.</p>
+          <p>
+            Copyright © 2025 | Powered by Data Network Solutions.</p>
         </div>
       </div>
     </footer>
@@ -275,7 +256,7 @@ footer {
 
 .payment-icons img {
   max-width: 100%;
-  height: auto;
+  height: 100px;
 }
 
 .copyright {

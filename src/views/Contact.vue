@@ -13,22 +13,7 @@
         <div class="contact-info">
           <h2>Get in Touch</h2>
           <p>We're here to help and answer any question you might have. We look forward to hearing from you.</p>
-
           <div class="info-item">
-            <div class="icon">
-              <img src="https://ext.same-assets.com/3844190759/478585328.png" alt="Phone" />
-            </div>
-            <div class="info">
-              <h3>Phone</h3>
-              <p>0311-1444717</p>
-              <p>Monday to Saturday, 9am to 6pm</p>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="icon">
-              <img src="https://ext.same-assets.com/3844190759/2186242231.png" alt="Email" />
-            </div>
             <div class="info">
               <h3>Email</h3>
               <p>support@symbios.pk</p>
@@ -37,9 +22,6 @@
           </div>
 
           <div class="info-item">
-            <div class="icon">
-              <img src="https://ext.same-assets.com/3844190759/3347869897.png" alt="Location" />
-            </div>
             <div class="info">
               <h3>Address</h3>
               <p>Symbios.pk Headquarters</p>

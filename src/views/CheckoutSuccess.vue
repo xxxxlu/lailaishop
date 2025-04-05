@@ -2,9 +2,6 @@
   <div class="checkout-success">
     <div class="container">
       <div class="success-card">
-        <div class="success-icon">
-          <img src="https://ext.same-assets.com/3844190759/2186242231.png" alt="Success" />
-        </div>
 
         <h1>Thank You for Your Order!</h1>
         <p class="order-number">Order #{{ orderId }}</p>

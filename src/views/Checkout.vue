@@ -89,7 +89,8 @@
                   value="cod"
                   v-model="customerInfo.paymentMethod"
                 />
-                <label for="cashOnDelivery">Cash on Delivery</label>
+                <label for="cashOnDelivery">easypaisa pay</label>
+                <img src="../assets/easypaisa.png" alt="" style="width: 100px; height: 80px;">
               </div>
               <div class="payment-method">
                 <input
@@ -98,7 +99,8 @@
                   value="bank"
                   v-model="customerInfo.paymentMethod"
                 />
-                <label for="bankTransfer">Bank Transfer</label>
+                <label for="bankTransfer">Frame pay</label>
+                <img src="../assets/Frame.png" alt="" style="width: 100px; height: 80px;">
               </div>
             </div>
 
