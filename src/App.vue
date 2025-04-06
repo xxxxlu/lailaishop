@@ -5,7 +5,7 @@
         <div class="container">
           <div class="logo">
             <router-link to="/">
-              <img src="https://ext.same-assets.com/3844190759/1759975337.png" alt="Symbios" />
+              <img src="./assets/Tekcrate.png" alt="Tekcrate" />
             </router-link>
           </div>
           <div class="search-box">
