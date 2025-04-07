@@ -61,7 +61,7 @@
         </div>
         <div class="copyright">
           <p>
-            Copyright © 2025 | Powered by Data Network Solutions.</p>
+            Copyright © 2025 | Powered by Data Network Solutions (SMC-Private) Limited</p>
         </div>
       </div>
     </footer>
