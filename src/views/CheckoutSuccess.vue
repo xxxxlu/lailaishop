@@ -2,7 +2,11 @@
   <div class="checkout-success">
     <div class="container">
       <div class="success-card">
-
+        <div class="success-icon">
+          <div class="checkmark-circle">
+            <div class="checkmark"></div>
+          </div>
+        </div>
         <h1>Thank You for Your Order!</h1>
         <p class="order-number">Order #{{ orderId }}</p>
 
@@ -146,161 +150,165 @@ export default {
 
 <style scoped>
 .checkout-success {
-  margin: 40px 0;
+  padding: 48px 0;
+  background-color: #f8fafc;
 }
 
 .success-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 48px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .success-icon {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
-.success-icon img {
+.checkmark-circle {
   width: 80px;
   height: 80px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.checkmark {
+  width: 40px;
+  height: 20px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  transform: rotate(-45deg);
 }
 
 h1 {
   text-align: center;
-  color: #4caf50;
-  margin-bottom: 10px;
+  color: #1e293b;
+  font-size: 32px;
+  margin-bottom: 24px;
 }
 
 .order-number {
   text-align: center;
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 30px;
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 32px;
 }
 
 .success-message {
   text-align: center;
-  margin-bottom: 30px;
-  line-height: 1.6;
+  margin-bottom: 32px;
+  line-height: 1.8;
+  color: #475569;
 }
 
 .order-details {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .order-details h2 {
-  font-size: 22px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+  font-size: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1e293b;
 }
 
 .details-section {
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 }
 
 .details-section h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #555;
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #334155;
 }
 
 .info-item {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .label {
-  font-weight: bold;
-  width: 120px;
+  font-weight: 600;
+  width: 140px;
   flex-shrink: 0;
+  color: #1e293b;
 }
 
 .summary-items {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .summary-item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
 }
 
 .summary-totals {
-  padding-top: 15px;
+  padding-top: 18px;
 }
 
 .total-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .grand-total {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid #eee;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
 }
 
 .actions {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
 }
 
 .continue-btn, .print-btn {
-  padding: 12px 25px;
-  border-radius: 4px;
-  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .continue-btn {
-  background-color: #d23c36;
+  background-color: #3b82f6;
   color: white;
 }
 
 .print-btn {
-  background-color: #f5f5f5;
-  color: #333;
-  border: 1px solid #ddd;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  border: 1px solid #e2e8f0;
 }
 
 .continue-btn:hover {
-  background-color: #c0392b;
+  background-color: #2563eb;
 }
 
 .print-btn:hover {
-  background-color: #eee;
-}
-
-@media print {
-  .actions {
-    display: none;
-  }
-
-  .checkout-success {
-    margin: 0;
-  }
-
-  .success-card {
-    box-shadow: none;
-    padding: 0;
-  }
+  background-color: #e2e8f0;
 }
 
 @media (max-width: 768px) {
   .success-card {
-    padding: 20px;
+    padding: 24px;
   }
 
   .info-item {
@@ -309,12 +317,12 @@ h1 {
 
   .label {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 
   .actions {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
   .continue-btn, .print-btn {

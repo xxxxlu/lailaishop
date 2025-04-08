@@ -10,7 +10,8 @@
           </div>
           <div class="header-actions">
             <div class="account">
-              <router-link to="/account">My Account</router-link>
+              <span v-if="username">Welcome, {{ username }}!</span>
+              <router-link v-else to="/account">My Account</router-link>
             </div>
             <div class="cart">
               <router-link to="/cart">
@@ -63,7 +64,7 @@
         </div>
         <div class="copyright">
           <p>
-            Copyright © 2025 | Powered by Data Network Solutions (SMC-Private) Limited
+            Copyright 2025 | Powered by Data Network Solutions (SMC-Private) Limited
           </p>
         </div>
       </div>
@@ -76,6 +77,11 @@ import { mapState, mapGetters } from 'vuex'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      username: localStorage.getItem('username') || ''
+    }
+  },
   computed: {
     ...mapState(['categories']),
     ...mapGetters(['cartCount'])

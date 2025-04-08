@@ -2,21 +2,25 @@
   <div class="product-detail">
     <div class="container">
       <div class="breadcrumbs">
-        <router-link to="/">Home</router-link> /
+        <router-link to="/">Home</router-link>
+        <span class="separator">/</span>
         <router-link :to="`/products?category=${product.category}`">
           {{ categoryName }}
-        </router-link> /
-        <span>{{ product.name }}</span>
+        </router-link>
+        <span class="separator">/</span>
+        <span class="current">{{ product.name }}</span>
       </div>
 
       <div class="product-container" v-if="product">
         <div class="product-images">
           <div class="main-image">
-            <img
-              :src="product.image"
-              :alt="product.name"
-              @error="handleImageError"
-            />
+            <div class="image-wrapper">
+              <img
+                :src="product.image"
+                :alt="product.name"
+                @error="handleImageError"
+              />
+            </div>
           </div>
         </div>
 
@@ -184,12 +188,12 @@ export default {
 
 <style scoped>
 .product-detail {
-  padding: 40px 0;
+  padding: 48px 0;
   background-color: #ffffff;
 }
 
 .breadcrumbs {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   color: #64748b;
   font-size: 14px;
   display: flex;
@@ -201,48 +205,65 @@ export default {
   color: #475569;
   text-decoration: none;
   transition: color 0.2s ease;
+  font-weight: 500;
 }
 
 .breadcrumbs a:hover {
   color: #3b82f6;
 }
 
+.breadcrumbs .separator {
+  color: #cbd5e1;
+}
+
+.breadcrumbs .current {
+  color: #1e293b;
+  font-weight: 500;
+}
+
 .product-container {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
-  margin-bottom: 60px;
-  background-color: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 64px;
+  margin-bottom: 64px;
+  align-items: start;
 }
 
 .product-images {
-  position: relative;
+  position: sticky;
+  top: 32px;
 }
 
-.main-image {
-  background-color: #f8fafc;
-  padding: 40px;
+.image-wrapper {
+  position: relative;
+  padding-top: 100%;
   border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  background-color: #f8fafc;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .main-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
-  max-height: 500px;
+  padding: 24px;
+  transition: transform 0.3s ease;
+}
+
+.main-image:hover img {
+  transform: scale(1.05);
 }
 
 .product-info {
-  padding: 40px 0;
+  position: relative;
 }
 
 .product-title {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 600;
   color: #1e293b;
   margin-bottom: 24px;
@@ -252,14 +273,19 @@ export default {
 .product-price {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
+  padding: 24px;
+  background-color: #f8fafc;
+  border-radius: 12px;
 }
 
 .current-price {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   color: #3b82f6;
+  line-height: 1;
 }
 
 .original-price {
@@ -271,10 +297,11 @@ export default {
 .discount {
   background-color: #dbeafe;
   color: #3b82f6;
-  padding: 6px 12px;
-  border-radius: 20px;
+  padding: 8px 16px;
+  border-radius: 24px;
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .stock-status {

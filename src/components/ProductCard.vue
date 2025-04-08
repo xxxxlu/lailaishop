@@ -94,7 +94,7 @@ export default {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #d23c36;
+  background-color: #3b82f6;
   color: white;
   padding: 5px 10px;
   border-radius: 3px;
@@ -131,7 +131,7 @@ export default {
 .current-price {
   font-size: 18px;
   font-weight: bold;
-  color: #d23c36;
+  color: #3b82f6;
   margin-right: 10px;
 }
 
@@ -144,7 +144,7 @@ export default {
 .add-to-cart-btn {
   width: 100%;
   padding: 8px 15px;
-  background-color: #d23c36;
+  background-color: #3b82f6;
   color: white;
   border: none;
   border-radius: 3px;
@@ -154,7 +154,7 @@ export default {
 }
 
 .add-to-cart-btn:hover {
-  background-color: #b8332d;
+  background-color: #0d449b;
 }
 
 .add-to-cart-btn:disabled {

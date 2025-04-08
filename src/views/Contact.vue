@@ -16,7 +16,7 @@
           <div class="info-item">
             <div class="info">
               <h3>Email</h3>
-              <p>support@symbios.pk</p>
+              <p>abcdshop@aontec.club</p>
               <p>We'll respond as soon as possible</p>
             </div>
           </div>
@@ -115,161 +115,241 @@ export default {
 
 <style scoped>
 .contact-page {
-  margin-bottom: 40px;
+  padding: 48px 0;
+  background-color: #ffffff;
 }
 
 .page-header {
-  margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 .page-header h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs {
-  color: #777;
+  color: #64748b;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .breadcrumbs a {
-  color: #333;
+  color: #475569;
   text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+.breadcrumbs a:hover {
+  color: #3b82f6;
 }
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact-info, .contact-form {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 32px;
 }
 
 .contact-info h2, .contact-form h2 {
   font-size: 24px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .contact-info > p {
-  margin-bottom: 30px;
-  color: #666;
+  margin-bottom: 32px;
+  color: #475569;
   line-height: 1.6;
+  font-size: 16px;
 }
 
 .info-item {
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
-  background-color: #f5f5f5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 15px;
+.info-item:hover {
+  transform: translateY(-2px);
 }
 
-.icon img {
-  width: 20px;
-  height: 20px;
+.info {
+  flex: 1;
 }
 
 .info h3 {
   font-size: 18px;
-  margin-bottom: 5px;
-  color: #333;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
 }
 
 .info p {
-  color: #666;
-  margin-bottom: 5px;
+  color: #475569;
+  margin-bottom: 4px;
+  font-size: 15px;
 }
 
 .social-media {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .social-media h3 {
   font-size: 18px;
-  margin-bottom: 15px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 20px;
 }
 
 .social-icons {
   display: flex;
+  gap: 16px;
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
-  background-color: #f5f5f5;
-  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #f8fafc;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 15px;
-  transition: background-color 0.3s;
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
 }
 
 .social-icon:hover {
-  background-color: #e8e8e8;
+  background-color: #3b82f6;
+  transform: translateY(-2px);
+}
+
+.social-icon:hover img {
+  filter: brightness(0) invert(1);
 }
 
 .social-icon img {
   width: 20px;
   height: 20px;
+  transition: filter 0.2s ease;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  font-weight: bold;
+  font-weight: 500;
+  color: #1e293b;
+  font-size: 15px;
 }
 
 .form-group input, .form-group textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 14px;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #1e293b;
+  background-color: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 .submit-btn {
-  background-color: #d23c36;
+  background-color: #3b82f6;
   color: white;
   border: none;
-  padding: 12px 25px;
-  border-radius: 4px;
+  padding: 14px 28px;
+  border-radius: 8px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.2s ease;
+  width: 100%;
 }
 
 .submit-btn:hover {
-  background-color: #c0392b;
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 992px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 0 24px;
+  }
 }
 
 @media (max-width: 768px) {
-  .contact-content {
-    grid-template-columns: 1fr;
+  .page-header h1 {
+    font-size: 32px;
   }
 
-  .contact-form {
-    order: -1;
+  .contact-info, .contact-form {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 32px 0;
+  }
+
+  .page-header {
+    margin-bottom: 32px;
+  }
+
+  .page-header h1 {
+    font-size: 28px;
+  }
+
+  .info-item {
+    padding: 16px;
+  }
+
+  .form-group input, .form-group textarea {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 12px 24px;
+    font-size: 15px;
   }
 }
 </style>

@@ -7,7 +7,7 @@ import Cart from '../views/Cart.vue'
 import Checkout from '../views/Checkout.vue'
 import CheckoutSuccess from '../views/CheckoutSuccess.vue'
 import Contact from '../views/Contact.vue'
-
+import Account from '../views/Account.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -45,6 +45,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/account',
+    name: 'Account',
+    component: Account
   }
 ]
 

@@ -89,7 +89,7 @@
                   value="cod"
                   v-model="customerInfo.paymentMethod"
                 />
-                <label for="cashOnDelivery">easypaisa pay</label>
+                <label for="cashOnDelivery"></label>
                 <img src="../assets/easypaisa.png" alt="" style="width: 100px; height: 80px;">
               </div>
               <div class="payment-method">
@@ -99,7 +99,7 @@
                   value="bank"
                   v-model="customerInfo.paymentMethod"
                 />
-                <label for="bankTransfer">Frame pay</label>
+                <label for="bankTransfer"></label>
                 <img src="../assets/Frame.png" alt="" style="width: 100px; height: 80px;">
               </div>
             </div>
@@ -318,7 +318,7 @@ export default {
 
 .place-order-btn {
   padding: 12px 25px;
-  background-color: #d23c36;
+  background-color: #3b82f6;
   color: white;
   border: none;
   border-radius: 5px;
@@ -329,7 +329,7 @@ export default {
 }
 
 .place-order-btn:hover {
-  background-color: #c0392b;
+  background-color: #1150b4;
 }
 
 .summary-items {
@@ -423,7 +423,7 @@ export default {
 .continue-shopping-btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: #d23c36;
+  background-color: #3b82f6;
   color: white;
   border-radius: 5px;
   font-weight: bold;

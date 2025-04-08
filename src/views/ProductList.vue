@@ -204,7 +204,7 @@ export default {
 }
 
 .filter-section ul li a:hover {
-  color: #d23c36;
+  color: #3b82f6;
 }
 
 .price-inputs {
@@ -227,7 +227,7 @@ export default {
 .filter-btn {
   width: 100%;
   padding: 8px 15px;
-  background-color: #d23c36;
+  background-color: #3b82f6;
   color: white;
   border: none;
   border-radius: 3px;
