@@ -87,7 +87,7 @@
           <div class="footer-column">
             <h3>Contact Info</h3>
             <ul class="contact-info">
-              <li><span class="contact-icon">✉️</span> <a href="mailto:abcshop@zontec.club">abcshop@zontec.club</a></li>
+              <li><span class="contact-icon">✉️</span> <a href="mailto:abcshop@zontec.club">lailaishop@zontec.club</a></li>
               <li><span class="contact-icon">📍</span> 123 Tech Street, Innovation City</li>
             </ul>
           </div>
