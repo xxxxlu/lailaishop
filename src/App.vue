@@ -5,7 +5,7 @@
         <div class="container">
           <div class="logo">
             <router-link to="/">
-              <img src="" alt="abcshop" />
+              <img src="" alt="lailaishop" />
             </router-link>
           </div>
           <div class="header-actions">
