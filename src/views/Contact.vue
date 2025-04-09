@@ -27,7 +27,7 @@
           <div class="info-item">
             <div class="info">
               <h3>Email</h3>
-              <p>lailaishop@aontec.club</p>
+              <p>lailaishop@lailaishop.shop</p>
               <p>We'll respond as soon as possible</p>
             </div>
           </div>

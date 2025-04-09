@@ -6,7 +6,7 @@
         <div class="hero-content">
           <div class="hero-text">
             <div class="tech-line"></div>
-            <h1><span class="highlight">Laila</span>Shop</h1>
+            <h1><span class="highlight">Lailai</span>Shop</h1>
             <h2>Tech-Driven Shopping Experience</h2>
             <p>Discover cutting-edge products at revolutionary prices</p>
             <div class="hero-buttons">

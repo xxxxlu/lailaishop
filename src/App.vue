@@ -11,7 +11,7 @@
         <div class="container">
           <div class="logo">
             <router-link to="/">
-              <span class="logo-text"><span class="highlight">Laila</span>Shop</span>
+              <span class="logo-text"><span class="highlight">Lailai</span>Shop</span>
             </router-link>
           </div>
           <nav class="main-nav">
@@ -87,7 +87,7 @@
           <div class="footer-column">
             <h3>Contact Info</h3>
             <ul class="contact-info">
-              <li><span class="contact-icon">✉️</span> <a href="mailto:abcshop@zontec.club">lailaishop@zontec.club</a></li>
+              <li><span class="contact-icon">✉️</span> <a href="#">lailaishop@lailaishop.shop</a></li>
               <li><span class="contact-icon">📍</span> 123 Tech Street, Innovation City</li>
             </ul>
           </div>
@@ -109,7 +109,7 @@
         <div class="copyright">
           <div class="tech-line"></div>
           <p>
-            Copyright © 2025 | Powered by Data Network Solutions (SMC-Private) Limited
+            Copyright 2025 | Powered by Data Network Solutions (SMC-Private) Limited
           </p>
         </div>
       </div>
@@ -277,12 +277,8 @@ header {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #f3f4f6 0%, #9ca3af 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  padding-right: 5px;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .logo-text::after {
@@ -765,6 +761,15 @@ footer {
   font-size: 14px;
   position: relative;
   z-index: 2;
+}
+
+.highlight {
+  position: relative;
+  color: #22c55e;
+  display: inline-block;
+  color: #22c55e;
+  background: none;
+  -webkit-text-fill-color: initial;
 }
 
 @media (max-width: 1024px) {
