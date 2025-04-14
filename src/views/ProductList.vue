@@ -19,19 +19,6 @@
 
       <div class="content-wrapper">
         <div class="sidebar">
-          <div class="filter-section">
-            <div class="section-header">
-              <h3>Categories</h3>
-              <div class="tech-line"></div>
-            </div>
-            <ul>
-              <li v-for="category in categories" :key="category.id">
-                <router-link :to="'/products?category=' + category.slug">
-                  {{ category.name }}
-                </router-link>
-              </li>
-            </ul>
-          </div>
 
           <div class="filter-section">
             <div class="section-header">

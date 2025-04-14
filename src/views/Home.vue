@@ -50,32 +50,6 @@
       </div>
     </div>
     
-    <!-- Categories Section -->
-    <div class="categories-section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-line"></div>
-          <h2 class="section-title">Tech Categories</h2>
-          <p class="section-subtitle">Browse our curated tech collections</p>
-        </div>
-        <div class="categories-grid">
-          <div class="category-card" v-for="category in categories" :key="category.id">
-            <router-link :to="`/products?category=${category.slug}`">
-              <div class="category-icon">
-                <div class="icon-highlight"></div>
-                <img :src="getCategoryImage(category.slug)" :alt="category.name">
-              </div>
-              <h3>{{ category.name }}</h3>
-              <div class="category-explore">
-                <span>Explore</span>
-                <span class="arrow">→</span>
-              </div>
-            </router-link>
-          </div>
-        </div>
-      </div>
-    </div>
-    
     <!-- Latest Products Section -->
     <div class="latest-products">
       <div class="container">

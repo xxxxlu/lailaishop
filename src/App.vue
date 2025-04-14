@@ -88,7 +88,6 @@
             <h3>Contact Info</h3>
             <ul class="contact-info">
               <li><span class="contact-icon">✉️</span> <a href="#">lailaishop@lailaishop.shop</a></li>
-              <li><span class="contact-icon">📍</span> 123 Tech Street, Innovation City</li>
             </ul>
           </div>
           <div class="footer-column">
