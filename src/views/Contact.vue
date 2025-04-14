@@ -32,14 +32,6 @@
             </div>
           </div>
 
-          <div class="info-item">
-            <div class="info">
-              <h3>Address</h3>
-              <p>Symbios.pk Headquarters</p>
-              <p>Karachi, Pakistan</p>
-            </div>
-          </div>
-
           <div class="social-media">
             <h3>Follow Us</h3>
             <div class="social-icons">
