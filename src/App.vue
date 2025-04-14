@@ -109,7 +109,7 @@
         <div class="copyright">
           <div class="tech-line"></div>
           <p>
-            Copyright 2025 | Powered by Data Network Solutions (SMC-Private) Limited
+            Copyright © 2025 lailaishop Store Powered by Data Tech Solutions (SMC-Private) Limited
           </p>
         </div>
       </div>
